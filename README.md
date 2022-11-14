@@ -1,2 +1,2 @@
-# tsallagtiTour
-https://borislav2515.github.io/tsallagtiTour/index.html
+# tour
+https://borislav2515.github.io/tour/index.html
