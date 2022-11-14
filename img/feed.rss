@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>Tsallagti Tour</title>
+		<link><![CDATA[https://the-as.ru]]></link>
+		<description>Туры в Осетии! Лучшее только с нами!</description>
+		<language>ru</language>
+		<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+		<generator>MySitemapGenerator (www.mysitemapgenerator.com)</generator>
+
+		<item>
+			<guid isPermaLink="false">1978229233</guid>
+			<title>Политика Конфиденциальности</title>
+			<link>https://the-as.ru/html/private.html</link>
+			<dc:creator>Администратор</dc:creator>
+			<category>Новости сайта</category>
+			<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">1731262864</guid>
+			<title>Актив-тур</title>
+			<link>https://the-as.ru/active.html</link>
+			<dc:creator>Администратор</dc:creator>
+			<category>Новости сайта</category>
+			<description>Туры в Осетии! Рафтинг, Архонский перевал</description>
+			<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+			<enclosure url="https://best-tour.tmweb.ru/img/arhon/arhon1.jpeg" type="image/jpeg" />
+		</item>
+		<item>
+			<guid isPermaLink="false">2678778111</guid>
+			<title>Наши лучшие туры</title>
+			<link>https://the-as.ru/</link>
+			<dc:creator>Администратор</dc:creator>
+			<category>Новости сайта</category>
+			<description>Туры в Осетии! Лучшее только с нами!</description>
+			<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">3769174494</guid>
+			<title>Этно-Тур</title>
+			<link>https://the-as.ru/etno.html</link>
+			<dc:creator>Администратор</dc:creator>
+			<category>Новости сайта</category>
+			<description>Туры в Осетии! Даргавс, Кармадон, Бирагзанг, Дзивгис</description>
+			<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+		</item>
+		<item>
+			<guid isPermaLink="false">3393888121</guid>
+			<title>Тест-Тур</title>
+			<link>https://the-as.ru/test.html</link>
+			<dc:creator>Администратор</dc:creator>
+			<category>Новости сайта</category>
+			<description>Туры в Осетии! Лучшее только с нами!</description>
+			<pubDate>Thu, 20 May 2021 20:40:40 +0300</pubDate>
+		</item>
+	</channel>
+</rss>

@@ -1,0 +1,116 @@
+.header__container {
+    display: flex;
+    flex-direction: row;
+}
+.bg-image {
+    width: 100%;
+    min-height: 456px;
+    background-image: url("../img/slide/slide-start-1.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.bg-image__inner {
+    display: flex;
+    min-height: inherit;
+    width: 100%;
+    padding: 50px 0 40px;
+}
+
+.bg-image__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.bg-image__container::before {
+    content: '';
+    display: block;
+}
+
+.bg-image__subtitle {
+    position: relative;
+    padding-left: 70px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.bg-image__subtitle::before {
+    content: '';
+    width: 50px;
+    top: .6em;
+    position: absolute;
+    left: 0;
+    border-bottom: 3px solid;
+}
+.bg-image__title {
+    font-size: 68px;
+}
+
+.bg-image__list {
+    display: flex;
+}
+
+.bg-image__item {
+    margin-right: 20px;
+}
+
+.bg-image__link {
+    font-size: 16px;
+    color: #fff;
+}
+
+.termin {
+    padding-top: 120px;
+}
+
+.termin__title {
+    max-width: 85%;
+    margin-bottom: 20px;
+    font-family: 'Oswald-Regular';
+    letter-spacing: 1px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #122e44;
+}
+
+.termin-page {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.termin__subtitle {
+    font-family: 'Oswald-Regular', Georgia, SansSerif;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 75px;
+}
+
+
+@media screen and (max-width: 479px) {
+    .bg-image{
+        background-attachment: fixed;
+    }
+    .bg-image__title {
+        font-size: 24px;
+    }
+    .bg-image__subtitle {
+        font-size: 16px;
+        padding-left: 40px;
+    }
+    .bg-image__subtitle::before {
+        width: 30px;
+    }
+    .termin-page {
+        max-width: 100%;
+    }
+    .termin__title {
+        max-width: 100%;
+    }
+    .termin__subtitle {
+        margin-bottom: 65px;
+    }
+}

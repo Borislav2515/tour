@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://the-as.ru/sitemap.xml
+Host: the-as.ru

@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+        />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+        <meta
+            name="description"
+            content="Незабываемый отдых в горах Осетии. Именно здесь, у подножия Главного Кавказского Хребта начнется наше путешествие по прекрасной Осетии. Этот отдых станет для вас незабываемым ярким событием! Туры в Северную Осетию - лучшее только с нами!"
+        />
+        <meta
+            name="keywords"
+            content="Туры в Осетию отдых в Осетии мертвый город даргавс экскурсиия по Осетии, Кавказ тур отдых в горах, достопримечательности Алании the-as.ru"
+        />
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function (m, e, t, r, i, k, a) {
+                m[i] =
+                    m[i] ||
+                    function () {
+                        (m[i].a = m[i].a || []).push(arguments);
+                    };
+                m[i].l = 1 * new Date();
+                (k = e.createElement(t)),
+                    (a = e.getElementsByTagName(t)[0]),
+                    (k.async = 1),
+                    (k.src = r),
+                    a.parentNode.insertBefore(k, a);
+            })(
+                window,
+                document,
+                'script',
+                'https://mc.yandex.ru/metrika/tag.js',
+                'ym'
+            );
+
+            ym(77797873, 'init', {
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true,
+            });
+        </script>
+        <noscript
+            ><div>
+                <img
+                    src="https://mc.yandex.ru/watch/77797873"
+                    style="position: absolute; left: -9999px"
+                    alt=""
+                /></div
+        ></noscript>
+        <!-- /Yandex.Metrika counter -->
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="preload" as="style" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <title>Отдых в Осетии. Туры, экскурсии и незабываемые эмоции!</title>
+    </head>
+    <body>
+        <div class="overflow"></div>
+        <form
+            action="php/sendmail.php"
+            method="post"
+            id="price_form1"
+            class="price_form1"
+        >
+            <a class="form-popup__close btn">x</a>
+            <label class="form-price__wrap tour__price-label">
+                <span class="form__title-price">Цена:</span>
+                <input
+                    type="text"
+                    name="tour"
+                    value="Этно-Тур"
+                    class="tour__name-input"
+                />
+            </label>
+            <label class="tour__price-label">
+                <input
+                    type="text"
+                    name="price"
+                    class="tour__price-value"
+                    id="tour__price-value1"
+                    value="2000"
+                    readonly
+                />
+            </label>
+            <label class="tour__price-label">
+                <input
+                    type="text"
+                    name="name"
+                    class="contacts__input name"
+                    placeholder="Ваше имя"
+                    maxlength="50"
+                    required
+                />
+            </label>
+            <label class="tour__price-label">
+                <input
+                    type="email"
+                    name="email"
+                    class="contacts__input email"
+                    placeholder="Ваш e-mail"
+                    maxlength="50"
+                    required
+                />
+            </label>
+            <label class="tour__price-label">
+                <input
+                    type="tel"
+                    name="phone"
+                    class="contacts__input input__tel"
+                    placeholder="Ваш телефон"
+                    required
+                />
+            </label>
+            <label class="tour__price-label">
+                <select name="date" class="contacts__input" required>
+                    <option>Выберите дату</option>
+                    <option value="03.06.2021">03.06.2021</option>
+                    <option value="19.06.2021">19.06.2021</option>
+                    <option value="01.07.2021">01.07.2021</option>
+                    <option value="20.07.2021">20.07.2021</option>
+                </select>
+            </label>
+            <p class="form__title">Количество человек:</p>
+            <div class="tour-price__lable">
+                <button
+                    class="unit btn_counter tour__btn"
+                    type="button"
+                    onclick="decr()"
+                >
+                    <i class="icon ion-md-settings">-</i>
+                </button>
+                <input
+                    type="number"
+                    name="count"
+                    value="1"
+                    class="price__input"
+                    onchange="totalPriceandCount()"
+                />
+                <button
+                    class="unit btn_counter tour__btn"
+                    type="button"
+                    onclick="incr()"
+                >
+                    <i class="icon ion-md-search">+</i>
+                </button>
+            </div>
+            <p class="form__title">
+                Отправля сообщение вы разрешаете обработку персональных данных
+            </p>
+            <button class="tour__btn btn__orange" type="submit">
+                Отправить
+            </button>
+        </form>
+        <header class="header" id="header">
+            <div class="header__desctop">
+                <div class="header__aside container">
+                    <div class="header__left">
+                        <a href="#" class="header__logo">
+                            <img
+                                src="img/logo.png"
+                                alt="Tsallagti туры логотип"
+                            />
+                            <span class="header-logo__name"
+                                >Tsallagti <strong>Tour</strong></span
+                            >
+                        </a>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-right__item">
+                            <div class="header-phone header__article">
+                                <div class="header-phone__left">
+                                    <a
+                                        href="tel:+79119762535"
+                                        class="header-phone__link"
+                                    >
+                                        <span class="header__icon">
+                                            <svg
+                                                version="1.1"
+                                                id="Capa_1"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                x="0px"
+                                                y="0px"
+                                                viewBox="0 0 384 384"
+                                                style="
+                                                    enable-background: new 0 0
+                                                        384 384;
+                                                "
+                                                xml:space="preserve"
+                                            >
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+			c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+			c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+			C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+                                                        />
+                                                    </g>
+                                                </g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                                <g></g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-phone__right">
+                                    <a
+                                        href="tel:+79119762535"
+                                        class="header-phone__link"
+                                        >+7 (911) 976 - 25 - 35</a
+                                    >
+                                    <a
+                                        href="tel:+79651111111"
+                                        class="header-phone__link"
+                                        >+7 (911) 976 - 25 - 35</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right__item">
+                            <div class="header-local header__article">
+                                <div class="header-local__let">
+                                    <a href="#tel" class="header-phone__link">
+                                        <span class="header__icon">
+                                            <svg
+                                                height="682pt"
+                                                viewBox="-119 -21 682 682.66669"
+                                                width="682pt"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="m216.210938 0c-122.664063 0-222.460938 99.796875-222.460938 222.460938 0 154.175781 222.679688 417.539062 222.679688 417.539062s222.242187-270.945312 222.242187-417.539062c0-122.664063-99.792969-222.460938-222.460937-222.460938zm67.121093 287.597656c-18.507812 18.503906-42.8125 27.757813-67.121093 27.757813-24.304688 0-48.617188-9.253907-67.117188-27.757813-37.011719-37.007812-37.011719-97.226562 0-134.238281 17.921875-17.929687 41.761719-27.804687 67.117188-27.804687 25.355468 0 49.191406 9.878906 67.121093 27.804687 37.011719 37.011719 37.011719 97.230469 0 134.238281zm0 0"
+                                                />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="header-local__right">
+                                    <a
+                                        href="#contacts"
+                                        class="header-local__link"
+                                    >
+                                        РСО-Алания, <br />
+                                        Нижний Унал
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a
+                            class="header__btn btn btn__orange"
+                            onclick="formOpen()"
+                            >Хочу с вами</a
+                        >
+                    </div>
+                </div>
+                <div class="header__menu" id="menu-desctop">
+                    <div class="container">
+                        <nav class="header__nav">
+                            <ul class="header__list">
+                                <li class="header__item">
+                                    <a
+                                        href="index.html"
+                                        class="heder__link heder__link-active"
+                                        >Главная</a
+                                    >
+                                </li>
+                                <li class="header__item">
+                                    <a href="etno.html" class="heder__link"
+                                        >Этно-Тур</a
+                                    >
+                                </li>
+                                <li class="header__item">
+                                    <a href="active.html" class="heder__link"
+                                        >Актив-Тур</a
+                                    >
+                                </li>
+                                <li class="header__item">
+                                    <a href="test.html" class="heder__link"
+                                        >Драйв-Тур</a
+                                    >
+                                </li>
+                                <li class="header__item">
+                                    <a href="news/news.html" class="heder__link"
+                                        >Блог</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <nav class="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" id="check-menu-mobile" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li class="menu-mobile__item menu-mobile__item-active">
+                            <a href="index.html" class="menu-mobile__link"
+                                >Главная</a
+                            >
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="etno.html" class="menu-mobile__link"
+                                >Этно-Тур</a
+                            >
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="active.html" class="menu-mobile__link"
+                                >Актив-Тур</a
+                            >
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="test.html" class="menu-mobile__link"
+                                >Драйв-Тур</a
+                            >
+                        </li>
+                        <li class="menu-mobile__item">
+                            <a href="news/news.html" class="menu-mobile__link"
+                                >Блог</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="index.html"
+                                class="navigation__logo menu-mobile__logo"
+                                >Tsallagti <strong>Tour</strong></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <a href="index.html" class="navigation__logo"
+                    >Tsallagti <strong>Tour</strong></a
+                >
+            </nav>
+        </header>
+        <main>
+            <section class="hero" id="hero">
+                <div class="swiper-container hero__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="1">
+                                <source
+                                    srcset="img/slide/slide-start-1.jpg"
+                                    media="(min-width: 769px)"
+                                />
+                                <img
+                                    src="img/slide/slide_1_mobile-min.jpg"
+                                    alt="MDN"
+                                    class="swiper-slide__img"
+                                />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="2">
+                                <source
+                                    srcset="img/slide/slide-start-2.jpg"
+                                    media="(min-width: 769px)"
+                                />
+                                <img
+                                    src="img/slide/slide_2_mobile-min.jpg"
+                                    alt="MDN"
+                                    class="swiper-slide__img"
+                                />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="3">
+                                <source
+                                    srcset="img/slide/slide-start-3.jpg"
+                                    media="(min-width: 769px)"
+                                />
+                                <img
+                                    src="img/slide/slide_3_mobile-min.jpg"
+                                    alt="MDN"
+                                    class="swiper-slide__img"
+                                />
+                            </picture>
+                        </div>
+                        <!-- Buttons -->
+                        <!--            <div class="swiper-button-prev"></div>-->
+                        <!--            <div class="swiper-button-next"></div>-->
+                    </div>
+                </div>
+                <div class="swiper-wrap">
+                    <div class="swiper-wrap__container wow zoomInDown">
+                        <h1 class="swiper-container__title">Лучшие туры</h1>
+                        <p class="swiper-container__text">Только с нами</p>
+                        <a href="etno.html" class="swuper__btn btn btn__orange"
+                            >Забронировать</a
+                        >
+                    </div>
+                </div>
+            </section>
+            <section class="best-tour" id="best-tour">
+                <div class="best-tour__container container">
+                    <h2 class="best-tour__title title">Наши лучшие туры</h2>
+                    <p class="best-toue__descr">
+                        <span class="best-toue__text">
+                            Tsallagti Tour предоставляет множество отличных
+                            туров путешественникам по всей республике. Мы
+                            предлагаем лучшие предложения по доступным ценам и
+                            можем создать для вас самый незабываемый отдых!
+                        </span>
+                    </p>
+                    <ul class="best-tour__list">
+                        <li class="best-tour__item wow bounceInLeft">
+                            <a href="etno.html" class="best-tour__link">
+                                <img
+                                    class="best-tour__img"
+                                    src="img/dargavs/dargavs1.jpeg"
+                                    alt="Этно-Тур"
+                                />
+                            </a>
+                            <div class="best-tour__info">
+                                <p class="best-tour__wrapper">
+                                    <span class="best-tour__price">
+                                        <span>2 000 р</span>
+                                    </span>
+                                    <span class="best-tour__stars">
+                                        <img
+                                            src="img/star.png"
+                                            alt="Рейтинг отеля 5 из 5"
+                                        />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                    </span>
+                                </p>
+                                <div class="best-tour__wrap">
+                                    <h3 class="best-tour__name">Этно-Тур</h3>
+                                    <span class="best-tour__type"
+                                        >Тур выходного дня</span
+                                    >
+                                    <a
+                                        href="etno.html"
+                                        class="best-tour__btn btn__orange btn"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best-tour__item wow bounceInUp">
+                            <a href="active.html" class="best-tour__link">
+                                <img
+                                    class="best-tour__img"
+                                    src="img/arhon/arhon2.jpeg"
+                                    alt="Актив-Тур"
+                                />
+                            </a>
+                            <div class="best-tour__info">
+                                <p class="best-tour__wrapper">
+                                    <span class="best-tour__price">
+                                        <span>2 000 р</span>
+                                    </span>
+                                    <span class="best-tour__stars">
+                                        <img
+                                            src="img/star.png"
+                                            alt="Сложность 5 ииз 5"
+                                        />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                    </span>
+                                </p>
+                                <div class="best-tour__wrap">
+                                    <h3 class="best-tour__name">Актив-Тур</h3>
+                                    <span class="best-tour__type"
+                                        >Тур выходного дня</span
+                                    >
+                                    <a
+                                        href="active.html"
+                                        class="best-tour__btn btn__orange btn"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                        <li class="best-tour__item wow bounceInRight">
+                            <a href="test.html" class="best-tour__link">
+                                <img
+                                    class="best-tour__img"
+                                    src="img/rafting/rafting1.jpeg"
+                                    alt="Тур номер 3"
+                                />
+                            </a>
+                            <div class="best-tour__info">
+                                <p class="best-tour__wrapper">
+                                    <span class="best-tour__price">
+                                        <span>2 000 р</span>
+                                    </span>
+                                    <span class="best-tour__stars">
+                                        <img
+                                            src="img/star.png"
+                                            alt="Рейтинг отеля 5 из 5"
+                                        />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                        <img src="img/star.png" alt="" />
+                                    </span>
+                                </p>
+                                <div class="best-tour__wrap">
+                                    <h3 class="best-tour__name">Драйв-Тур</h3>
+                                    <span class="best-tour__type"
+                                        >Тур выходного дня</span
+                                    >
+                                    <a
+                                        href="test.html"
+                                        class="best-tour__btn btn__orange btn"
+                                        >Подробнее</a
+                                    >
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <div class="contacts__container container">
+                    <div class="contacts__left">
+                        <div class="contacts__left-wrap">
+                            <div class="contacts__left-content">
+                                <h2 class="contacts__title title">
+                                    Оставьте отзыв
+                                </h2>
+                                <form
+                                    action="php/comments.php"
+                                    method="POST"
+                                    class="contacts-form"
+                                >
+                                    <div class="contacts-form__block">
+                                        <label
+                                            for="contacts-form__name"
+                                            class="contscts__label"
+                                            >Ваше имя</label
+                                        >
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="contacts-form__name contacts__input"
+                                            id="contacts-form__name"
+                                            required
+                                        />
+                                    </div>
+                                    <div class="contacts-form__block">
+                                        <label
+                                            for="star-5"
+                                            class="contscts__label"
+                                            >Ваша оценка</label
+                                        >
+                                        <div class="rating-area">
+                                            <input
+                                                type="radio"
+                                                name="rating"
+                                                id="star-5"
+                                                value="5"
+                                            />
+                                            <label
+                                                for="star-5"
+                                                title="Оценка «5»"
+                                            ></label>
+                                            <input
+                                                type="radio"
+                                                id="star-4"
+                                                name="rating"
+                                                value="4"
+                                            />
+                                            <label
+                                                for="star-4"
+                                                title="Оценка «4»"
+                                            ></label>
+                                            <input
+                                                type="radio"
+                                                id="star-3"
+                                                name="rating"
+                                                value="3"
+                                            />
+                                            <label
+                                                for="star-3"
+                                                title="Оценка «3»"
+                                            ></label>
+                                            <input
+                                                type="radio"
+                                                id="star-2"
+                                                name="rating"
+                                                value="2"
+                                            />
+                                            <label
+                                                for="star-2"
+                                                title="Оценка «2»"
+                                            ></label>
+                                            <input
+                                                type="radio"
+                                                id="star-1"
+                                                name="rating"
+                                                value="1"
+                                            />
+                                            <label
+                                                for="star-1"
+                                                title="Оценка «1»"
+                                            ></label>
+                                        </div>
+                                    </div>
+                                    <div class="contacts-label__block">
+                                        <label
+                                            for="contacts-message"
+                                            class="contscts__label"
+                                            >Ваше Сообщение</label
+                                        >
+                                        <textarea
+                                            name="comment"
+                                            cols="30"
+                                            rows="10"
+                                            class="contacts-message"
+                                            id="contacts-message"
+                                        ></textarea>
+                                    </div>
+                                    <div class="contscts-btn__block">
+                                        <button
+                                            class="contscts-btn btn btn__orange"
+                                            type="submit"
+                                        >
+                                            Отправить
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts__right" id="location-map">
+                        <iframe
+                            src="https://www.google.com/maps/d/u/1/embed?mid=1g7D-fsRJZ-rNdf0Gf1pj7quFG5WP9NIL"
+                            width="640"
+                            height="480"
+                        ></iframe>
+                    </div>
+                </div>
+            </section>
+            <section class="contacts-number">
+                <div class="contacts-number__container container">
+                    <h2 class="contacts-number-title visually-hidden">
+                        Контакты
+                    </h2>
+                    <ul class="contacts-number__list">
+                        <li class="contacts-number__item contacts-number-item">
+                            <div class="contacts-number-item__wrap">
+                                <div class="contacts-number-item__icon">
+                                    <a
+                                        href=""
+                                        class="contacts-number__icon-link"
+                                    >
+                                        <svg
+                                            version="1.1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            x="0px"
+                                            y="0px"
+                                            viewBox="0 0 384 384"
+                                            style="
+                                                enable-background: new 0 0 384
+                                                    384;
+                                            "
+                                            xml:space="preserve"
+                                        >
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="M353.188,252.052c-23.51,0-46.594-3.677-68.469-10.906c-10.719-3.656-23.896-0.302-30.438,6.417l-43.177,32.594
+			c-50.073-26.729-80.917-57.563-107.281-107.26l31.635-42.052c8.219-8.208,11.167-20.198,7.635-31.448
+			c-7.26-21.99-10.948-45.063-10.948-68.583C132.146,13.823,118.323,0,101.333,0H30.813C13.823,0,0,13.823,0,30.813
+			C0,225.563,158.438,384,353.188,384c16.99,0,30.813-13.823,30.813-30.813v-70.323C384,265.875,370.177,252.052,353.188,252.052z"
+                                                    />
+                                                </g>
+                                            </g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <ul class="contacts-number-item__list">
+                                    <li>
+                                        <a
+                                            href="tel:+79119762535"
+                                            class="contacts-number-item__link"
+                                            >+7 (911) 976 - 25 - 35</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="tel:+79651111111"
+                                            class="contacts-number-item__link"
+                                            >+7 (911) 976 - 25 - 35</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="contacts-number__item contacts-number-item">
+                            <div class="contacts-number-item__wrap">
+                                <div class="contacts-number-item__icon">
+                                    <a
+                                        href="mailto:dbdbdb0@mail.ru"
+                                        class="contacts-number__icon-link"
+                                    >
+                                        <svg
+                                            version="1.1"
+                                            id="Layer_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            x="0px"
+                                            y="0px"
+                                            viewBox="0 0 512.004 512.004"
+                                            style="
+                                                enable-background: new 0 0
+                                                    512.004 512.004;
+                                            "
+                                            xml:space="preserve"
+                                        >
+                                            <g>
+                                                <g>
+                                                    <g>
+                                                        <path
+                                                            d="M506.394,92.79L363.119,228.172L506.394,419.19c3.477-6.955,5.611-14.656,5.611-22.955V115.745
+				C512.004,107.468,509.85,99.745,506.394,92.79z"
+                                                        />
+                                                        <path
+                                                            d="M281.131,246.979L472.896,65.753c-4.075-1.045-8.256-1.749-12.651-1.749H51.755c-4.736,0-9.216,0.832-13.568,2.027
+				l192.939,181.184C245.163,260.014,266.795,260.014,281.131,246.979z"
+                                                        />
+                                                        <path
+                                                            d="M310.118,278.273c-15.509,14.123-34.88,21.184-54.229,21.184c-19.221,0-38.421-6.976-53.717-20.907l-22.08-20.736
+				L40.849,446.785c3.52,0.768,7.147,1.216,10.901,1.216h408.491c4.523,0,8.853-0.768,13.035-1.877L331.921,257.665L310.118,278.273
+				z"
+                                                        />
+                                                        <path
+                                                            d="M5.184,93.575C1.963,100.317,0,107.783,0,115.741v280.512c0,9.088,2.56,17.536,6.699,24.96l142.08-192.789L5.184,93.575z
+				"
+                                                        />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                            <g></g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a
+                                    href="mailto:dbdbdb0@mail.ru"
+                                    class="contacts-number-item__link"
+                                    >dbdbdb0@mail.ru</a
+                                >
+                            </div>
+                        </li>
+                        <li class="contacts-number__item contacts-number-item">
+                            <div class="contacts-number-item__wrap">
+                                <div class="contacts-number-item__icon">
+                                    <a
+                                        href=""
+                                        class="contacts-number__icon-link"
+                                    >
+                                        <svg
+                                            height="682pt"
+                                            viewBox="-119 -21 682 682.66669"
+                                            width="682pt"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="m216.210938 0c-122.664063 0-222.460938 99.796875-222.460938 222.460938 0 154.175781 222.679688 417.539062 222.679688 417.539062s222.242187-270.945312 222.242187-417.539062c0-122.664063-99.792969-222.460938-222.460937-222.460938zm67.121093 287.597656c-18.507812 18.503906-42.8125 27.757813-67.121093 27.757813-24.304688 0-48.617188-9.253907-67.117188-27.757813-37.011719-37.007812-37.011719-97.226562 0-134.238281 17.921875-17.929687 41.761719-27.804687 67.117188-27.804687 25.355468 0 49.191406 9.878906 67.121093 27.804687 37.011719 37.011719 37.011719 97.230469 0 134.238281zm0 0"
+                                            />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <a
+                                    href="tel:+79119762535"
+                                    class="contacts-number-item__link"
+                                    >РСО-Алания, <br />
+                                    Нижний Унал</a
+                                >
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <h2 class="visually-hidden">Tsallagti-Tour</h2>
+                <div class="footer-top">
+                    <div class="footer-left footer-top__item">
+                        <h4 class="footer__title">О нас</h4>
+                        <p class="footer-left__descr footer-text">
+                            Наше туристическое агентство было создано только с
+                            одной целью - показать путешественникам истинные
+                            чудеса, вдали от простых туристических стереотипов.
+                            С тех пор мы собрали целый ряд замечательных
+                            впечатлений и туров, которые покажут вам интересные
+                            места, менее посещаемые туристами, где вы сможете
+                            получить реальное представление о туризме.
+                        </p>
+                    </div>
+                    <div class="footer__mid footer-top__item">
+                        <h4 class="footer__title">Новости</h4>
+                        <article class="footer-news">
+                            <h5>Самое загадочное место России</h5>
+                            <a
+                                href="news/dargavs-news.html"
+                                class="footer-news__link"
+                            >
+                                <p class="footer-news__post footer-text">
+                                    Даргавс - город мертых
+                                </p>
+                            </a>
+                        </article>
+                        <article class="footer-news">
+                            <h5>Непреступная крепость</h5>
+                            <a
+                                href="news/dzivgis-news.html"
+                                class="footer-news__link"
+                            >
+                                <p class="footer-news__post footer-text">
+                                    Дзивгисские Предпещерные замки
+                                </p>
+                            </a>
+                        </article>
+                    </div>
+                    <div class="footer-right footer-top__item">
+                        <h4 class="footer__title">Галлерея</h4>
+                        <ul class="footer-right__galley footer-galery">
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/dargavs/dargavs3.jpeg"
+                                        alt="Даргавс"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/dargavs/dargavs1.jpeg"
+                                        alt="Даргавс город мертвых"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/dargavs/dargavs4.jpeg"
+                                        alt="Даргавс некрополь"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/arhon/arhon1.jpeg"
+                                        alt="Архонское ущелье"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/arhon/arhon2.jpeg"
+                                        alt="Архон"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                            <li class="footer-galery__item">
+                                <a href="#" class="footer-galery__link">
+                                    <img
+                                        src="img/arhon/arhon3.jpeg"
+                                        alt="Архонское ущелье"
+                                        class="footer-galery__img"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-aside">
+                    <div class="footer-aside__container">
+                        <div class="footer-aside__page">
+                            <ul class="footer-menu">
+                                <li class="footer-menu__item">
+                                    <a
+                                        href="index.html"
+                                        class="footer-menu__link footer-active"
+                                        >Главная</a
+                                    >
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a
+                                        href="etno.html"
+                                        class="footer-menu__link"
+                                        >Этно-Тур</a
+                                    >
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a
+                                        href="active.html"
+                                        class="footer-menu__link"
+                                        >Актив-Тур</a
+                                    >
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a
+                                        href="test.html"
+                                        class="footer-menu__link"
+                                        >Драйв-Тур</a
+                                    >
+                                </li>
+                                <li class="footer-menu__item">
+                                    <a
+                                        href="news/news.html"
+                                        class="footer-menu__link"
+                                        >Блог</a
+                                    >
+                                </li>
+                            </ul>
+                            <ul class="footer-social">
+                                <li class="footer-social__item">
+                                    <a
+                                        href="https://www.instagram.com/tsallagti_mashug/"
+                                        class="footer-social__link footer-social__inst"
+                                    >
+                                        <svg
+                                            data-name="Слой 1"
+                                            id="Слой_1"
+                                            viewBox="0 0 96 96"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <defs>
+                                                <style>
+                                                    .inst-1 {
+                                                        fill: #9c2275;
+                                                    }
+
+                                                    .inst-2 {
+                                                        fill: #c04181;
+                                                    }
+
+                                                    .inst-3 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .inst-4 {
+                                                        fill: #fff;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title />
+                                            <path
+                                                class="inst-1"
+                                                d="M92,48v.13A44,44,0,1,1,47.87,4H48c1.06,0,2.11,0,3.16.12a42.89,42.89,0,0,1,5.12.67,43.39,43.39,0,0,1,8.1,2.37A44.13,44.13,0,0,1,88.79,31.47a43.22,43.22,0,0,1,2.43,8.24h0a44,44,0,0,1,.67,5.17C92,45.92,92,47,92,48Z"
+                                            />
+                                            <path
+                                                class="inst-2"
+                                                d="M91,44.5v.12A39.53,39.53,0,1,1,51.38,5h.12c1,0,1.89,0,2.84.11a38.38,38.38,0,0,1,4.59.6,39.33,39.33,0,0,1,5.45,1.45A44.13,44.13,0,0,1,88.79,31.47a38.33,38.33,0,0,1,1.51,5.59h0a39.22,39.22,0,0,1,.6,4.64C91,42.63,91,43.57,91,44.5Z"
+                                            />
+                                            <path
+                                                class="inst-3"
+                                                d="M74.66,21.93a36.47,36.47,0,0,1,3,3.52"
+                                            />
+                                            <path
+                                                class="inst-3"
+                                                d="M58,12a38.11,38.11,0,0,1,11.78,5.76"
+                                            />
+                                            <path
+                                                class="inst-4"
+                                                d="M29,37V59a8,8,0,0,0,8,8H59a8,8,0,0,0,8-8V37a8,8,0,0,0-8-8H37A8,8,0,0,0,29,37ZM56.32,63H39.68A6.68,6.68,0,0,1,33,56.32V39.68A6.68,6.68,0,0,1,39.68,33H56.32A6.68,6.68,0,0,1,63,39.68V56.32A6.68,6.68,0,0,1,56.32,63Z"
+                                            />
+                                            <path
+                                                class="inst-4"
+                                                d="M48,39a9,9,0,1,0,9,9A9,9,0,0,0,48,39Zm0,14a5,5,0,1,1,5-5A5,5,0,0,1,48,53Z"
+                                            />
+                                            <circle
+                                                class="inst-4"
+                                                cx="58"
+                                                cy="38"
+                                                r="2"
+                                            />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-social__item">
+                                    <a
+                                        href="https://api.whatsapp.com/send/?phone=79889889815&text&app_absent=0"
+                                        class="footer-social__link footer-social__wh"
+                                    >
+                                        <svg
+                                            data-name="Слой 1"
+                                            id="wh"
+                                            viewBox="0 0 96 96"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <defs>
+                                                <style>
+                                                    .wh-1 {
+                                                        fill: #1c852d;
+                                                    }
+
+                                                    .wh-2 {
+                                                        fill: #269f2e;
+                                                    }
+
+                                                    .wh-3 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .wh-4 {
+                                                        fill: #fff;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title />
+                                            <path
+                                                class="wh-1"
+                                                d="M92,48v.13A44,44,0,1,1,47.87,4H48c1.06,0,2.11,0,3.16.12a42.89,42.89,0,0,1,5.12.67,43.39,43.39,0,0,1,8.1,2.37A44.13,44.13,0,0,1,88.79,31.47a43.22,43.22,0,0,1,2.43,8.24h0a44,44,0,0,1,.67,5.17C92,45.92,92,47,92,48Z"
+                                            />
+                                            <path
+                                                class="wh-2"
+                                                d="M91,44.5v.12A39.53,39.53,0,1,1,51.38,5h.12c1,0,1.89,0,2.84.11a38.38,38.38,0,0,1,4.59.6,39.33,39.33,0,0,1,5.45,1.45A44.13,44.13,0,0,1,88.79,31.47a38.33,38.33,0,0,1,1.51,5.59h0a39.22,39.22,0,0,1,.6,4.64C91,42.63,91,43.57,91,44.5Z"
+                                            />
+                                            <path
+                                                class="wh-3"
+                                                d="M74.66,21.93a36.47,36.47,0,0,1,3,3.52"
+                                            />
+                                            <path
+                                                class="wh-3"
+                                                d="M58,12a38.11,38.11,0,0,1,11.78,5.76"
+                                            />
+                                            <g>
+                                                <path
+                                                    class="wh-4"
+                                                    d="M46.36,27.74A19.86,19.86,0,0,0,31.37,58L27.84,68.35l10.8-3.41a19.89,19.89,0,1,0,7.72-37.2Zm2.8,35.94A16,16,0,0,1,40,61.42a1,1,0,0,0-.82-.09l-6.21,2,2-6a1,1,0,0,0-.13-.87,16.15,16.15,0,1,1,14.3,7.14Z"
+                                                />
+                                                <path
+                                                    class="wh-4"
+                                                    d="M54.07,50.26l4,2.09c.41.2.69.35.41,1.45s-.35,1.84-1.44,2.52a6.18,6.18,0,0,1-2.13,1c-.55.1-1.11.56-3.56-.36a19.08,19.08,0,0,1-9-6.19c-3.53-4.15-4.59-7.33-3.61-9.86a7.06,7.06,0,0,1,1.17-2,2.47,2.47,0,0,1,1.83-.92c.76-.12,1.5-.57,2.2,1.44s1.13,3,1.26,3.28a1.29,1.29,0,0,1-.4,1.55,12.33,12.33,0,0,0-1.1,1.19.89.89,0,0,0,0,1.1,15,15,0,0,0,3.38,4.15,19.35,19.35,0,0,0,3.17,1.87c.36.16.6.4,1.26-.28s1-1.2,1.41-1.64S53.65,50,54.07,50.26Z"
+                                                />
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer-social__item">
+                                    <a
+                                        href="https://telegram.me/tsallagti_mashug"
+                                        class="footer-social__link footer-social__tel"
+                                    >
+                                        <svg
+                                            data-name="Слой 1"
+                                            id="tel"
+                                            viewBox="0 0 96 96"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <defs>
+                                                <style>
+                                                    .tl-1 {
+                                                        fill: #cf5915;
+                                                    }
+
+                                                    .tl-2 {
+                                                        fill: #ff8721;
+                                                    }
+
+                                                    .tl-3 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-linecap: round;
+                                                        stroke-linejoin: round;
+                                                        stroke-width: 3px;
+                                                    }
+
+                                                    .tl-4 {
+                                                        fill: #1d78b5;
+                                                    }
+
+                                                    .tl-5 {
+                                                        fill: #2fa8df;
+                                                    }
+
+                                                    .tl-6 {
+                                                        fill: #fff;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title />
+                                            <path
+                                                class="tl-1"
+                                                d="M92,48v.13A44,44,0,1,1,47.87,4H48c1.06,0,2.11,0,3.16.12a42.89,42.89,0,0,1,5.12.67,43.39,43.39,0,0,1,8.1,2.37A44.13,44.13,0,0,1,88.79,31.47a43.22,43.22,0,0,1,2.43,8.24h0a44,44,0,0,1,.67,5.17C92,45.92,92,47,92,48Z"
+                                            />
+                                            <path
+                                                class="tl-2"
+                                                d="M91,44.5v.12A39.53,39.53,0,1,1,51.38,5h.12c1,0,1.89,0,2.84.11a38.38,38.38,0,0,1,4.59.6,39.33,39.33,0,0,1,5.45,1.45A44.13,44.13,0,0,1,88.79,31.47a38.33,38.33,0,0,1,1.51,5.59h0a39.22,39.22,0,0,1,.6,4.64C91,42.63,91,43.57,91,44.5Z"
+                                            />
+                                            <path
+                                                class="tl-3"
+                                                d="M74.66,21.93a36.47,36.47,0,0,1,3,3.52"
+                                            />
+                                            <path
+                                                class="tl-3"
+                                                d="M58,12a38.11,38.11,0,0,1,11.78,5.76"
+                                            />
+                                            <path
+                                                class="tl-4"
+                                                d="M92,48v.13A44,44,0,1,1,47.87,4H48c1.06,0,2.11,0,3.16.12a42.89,42.89,0,0,1,5.12.67,43.39,43.39,0,0,1,8.1,2.37A44.13,44.13,0,0,1,88.79,31.47a43.22,43.22,0,0,1,2.43,8.24h0a44,44,0,0,1,.67,5.17C92,45.92,92,47,92,48Z"
+                                            />
+                                            <path
+                                                class="tl-5"
+                                                d="M91,44.5v.12A39.53,39.53,0,1,1,51.38,5h.12c1,0,1.89,0,2.84.11a38.38,38.38,0,0,1,4.59.6,39.33,39.33,0,0,1,5.45,1.45A44.13,44.13,0,0,1,88.79,31.47a38.33,38.33,0,0,1,1.51,5.59h0a39.22,39.22,0,0,1,.6,4.64C91,42.63,91,43.57,91,44.5Z"
+                                            />
+                                            <path
+                                                class="tl-3"
+                                                d="M74.66,21.93a36.47,36.47,0,0,1,3,3.52"
+                                            />
+                                            <path
+                                                class="tl-3"
+                                                d="M58,12a38.11,38.11,0,0,1,11.78,5.76"
+                                            />
+                                            <path
+                                                class="tl-6"
+                                                d="M65,29.24,24.73,44.78c-1.64.66-1.84,2.65-.17,3.22l10.2,3.6L58.68,36.49a.45.45,0,0,1,.54.71L40.4,54.11l-1.27,10a.74.74,0,0,0,1.26.62l6-5.94,10.08,7.83A2.35,2.35,0,0,0,59.8,65.2L67,30.85A1.43,1.43,0,0,0,65,29.24Z"
+                                            />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <hr class="footer__line" />
+                </div>
+                <div class="footer-advanced">
+                    <div class="footer-advanced__container">
+                        <div class="brand">
+                            <a href="#" class="header__logo">
+                                <span class="header-logo__name"
+                                    >Tsallagti <strong>Tour</strong></span
+                                >
+                            </a>
+                        </div>
+                        <p class="right">
+                            © 2021 Все Права Защищены.
+                            <a href="#" class="footer__polit"
+                                >Условия использования</a
+                            >
+                            и
+                            <a href="html/private.html" class="footer__polit"
+                                >Политика конфиденциальности.</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/menu-hidden.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/form.js"></script>
+    </body>
+</html>
