@@ -5,6 +5,12 @@
         { "discount": 3000, "price_to": 16000, "price_after": 16000 },
         { "discount": 4000, "price_to": 20000, "price_after": 20000 }
     ],
+    "ТЕСТОВЫЙ": [
+        { "discount": 1000, "price_to": 6000, "price_after": 6000 },
+        { "discount": 2000, "price_to": 11000, "price_after": 11000 },
+        { "discount": 3000, "price_to": 16000, "price_after": 16000 },
+        { "discount": 4000, "price_to": 20000, "price_after": 20000 }
+    ],
     "УЖЕВЕСНА": [
         { "discount": 1000, "price_to": 5000, "price_after": 5000 },
         { "discount": 3000, "price_to": 14000, "price_after": 14000 },
