@@ -1,10 +1,4 @@
 {
-    "покупкиапрель": [
-        { "discount": 1000, "price_to": 6500, "price_after": 13000 },
-        { "discount": 2000, "price_to": 13000, "price_after": 19000 },
-        { "discount": 3000, "price_to": 19000, "price_after": 25500 },
-        { "discount": 4000, "price_to": 25500, "price_after": 500000 }
-    ],
     "КОТОАПРЕЛЬ": [
         { "discount": 1000, "price_to": 5000, "price_after": 14000 },
         { "discount": 3000, "price_to": 14000, "price_after": 27000 },
