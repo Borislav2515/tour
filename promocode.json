@@ -5,12 +5,6 @@
         { "discount": 5000, "price_to": 27000, "price_after": 35000 },
         { "discount": 7000, "price_to": 35000, "price_after": 500000 }
     ],
-    "жимолость": [
-        { "discount": 2000, "price_to": 11000, "price_after": 30000 },
-        { "discount": 5000, "price_to": 30000, "price_after": 50000 },
-        { "discount": 9000, "price_to": 50000, "price_after": 75000 },
-        { "discount": 12000, "price_to": 75000, "price_after": 500000 }
-    ],
     "БАБОЧКА": [
         { "discount": 2000, "price_to": 11000, "price_after": 30000 },
         { "discount": 5000, "price_to": 30000, "price_after": 50000 },
@@ -19,17 +13,5 @@
     ],
     "МЕГАМАРКЕТ": [
         { "discount": 1000, "price_to": 5000, "price_after": 500000 }
-    ],
-    "акогдатепло": [
-        { "discount": 1000, "price_to": 6000, "price_after": 11000 },
-        { "discount": 2000, "price_to": 11000, "price_after": 16000 },
-        { "discount": 3000, "price_to": 16000, "price_after": 20000 },
-        { "discount": 4000, "price_to": 20000, "price_after": 500000 }
-    ],
-    "ЦВЕТОЧКИ": [
-        { "discount": 2000, "price_to": 11000, "price_after": 30000 },
-        { "discount": 5000, "price_to": 30000, "price_after": 50000 },
-        { "discount": 9000, "price_to": 50000, "price_after": 75000 },
-        { "discount": 12000, "price_to": 75000, "price_after": 500000 }
     ]
 }
