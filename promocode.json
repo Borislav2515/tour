@@ -5,12 +5,6 @@
         { "discount": 5000, "price_to": 27000, "price_after": 35000 },
         { "discount": 7000, "price_to": 35000, "price_after": 500000 }
     ],
-    "БАБОЧКА": [
-        { "discount": 2000, "price_to": 11000, "price_after": 30000 },
-        { "discount": 5000, "price_to": 30000, "price_after": 50000 },
-        { "discount": 9000, "price_to": 50000, "price_after": 75000 },
-        { "discount": 12000, "price_to": 75000, "price_after": 500000 }
-    ],
     "МЕГАМАРКЕТ": [
         { "discount": 1000, "price_to": 5000, "price_after": 500000 }
     ],
