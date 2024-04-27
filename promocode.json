@@ -13,5 +13,11 @@
     ],
     "МЕГАМАРКЕТ": [
         { "discount": 1000, "price_to": 5000, "price_after": 500000 }
+    ],
+    "ЛИЧНЫЙ SALE..": [
+        { "discount": 1000, "price_to": 4000, "price_after": 25000 },
+        { "discount": 5000, "price_to": 25000, "price_after": 50000 },
+        { "discount": 10000, "price_to": 50000, "price_after": 100000 },
+        { "discount": 20000, "price_to": 100000, "price_after": 500000 }
     ]
 }
