@@ -11,13 +11,16 @@
         { "discount": 3000, "price_to": 19000, "price_after": 25600 },
         { "discount": 4000, "price_to": 25000, "price_after": 500000 }
     ],
+    "КОТОДАЧНИКИ": [
+        { "discount": 500, "price_to": 4000, "price_after": 500000 }
+    ],
     "СЕЛЬДЬ": [
         { "discount": 1000, "price_to": 8000, "price_after": 17000 },
         { "discount": 2000, "price_to": 17000, "price_after": 25000 },
         { "discount": 3000, "price_to": 25000, "price_after": 30000 },
         { "discount": 4000, "price_to": 30000, "price_after": 500000 }
     ],
-    "СЕЛЬДЬ": [
+    "ИКРА": [
         { "discount": 2000, "price_to": 11000, "price_after": 30000 },
         { "discount": 5000, "price_to": 30000, "price_after": 50000 },
         { "discount": 9000, "price_to": 50000, "price_after": 75000 },
