@@ -1,10 +1,4 @@
 {
-    "ВРЕМЯПОКУПОК": [
-        { "discount": 1000, "price_to": 6500, "price_after": 19000 },
-        { "discount": 3000, "price_to": 19000, "price_after": 33000 },
-        { "discount": 5000, "price_to": 33000, "price_after": 47000 },
-        { "discount": 7000, "price_to": 47000, "price_after": 500000 }
-    ],
     "ЭТОВАМ": [
         { "discount": 1000, "price_to": 6500, "price_after": 13000 },
         { "discount": 2000, "price_to": 13000, "price_after": 19000 },
@@ -19,12 +13,6 @@
         { "discount": 2000, "price_to": 17000, "price_after": 25000 },
         { "discount": 3000, "price_to": 25000, "price_after": 30000 },
         { "discount": 4000, "price_to": 30000, "price_after": 500000 }
-    ],
-    "ИКРА": [
-        { "discount": 2000, "price_to": 11000, "price_after": 30000 },
-        { "discount": 5000, "price_to": 30000, "price_after": 50000 },
-        { "discount": 9000, "price_to": 50000, "price_after": 75000 },
-        { "discount": 12000, "price_to": 75000, "price_after": 500000 }
     ],
     "ЛИЧНЫЙ SALE..": [
         { "discount": 1000, "price_to": 4000, "price_after": 25000 },
