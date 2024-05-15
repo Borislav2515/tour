@@ -1,24 +1,6 @@
 {
-    "ШАШЛЫЧОК": [
-        { "discount": 1000, "price_to": 5500, "price_after": 16000 },
-        { "discount": 3000, "price_to": 16000, "price_after": 27000 },
-        { "discount": 5000, "price_to": 27000, "price_after": 36000 },
-        { "discount": 7000, "price_to": 36000, "price_after": 500000 }
-    ],
-    "ВЕСНЕПРИВЕТ": [
-        { "discount": 1000, "price_to": 8000, "price_after": 17000 },
-        { "discount": 2000, "price_to": 17000, "price_after": 25000 },
-        { "discount": 3000, "price_to": 25000, "price_after": 30000 },
-        { "discount": 4000, "price_to": 30000, "price_after": 500000 }
-    ],
     "КОТОДАЧНИКИ": [
-        { "discount": 500, "price_to": 4000, "price_after": 500000 }
-    ],
-    "СЕЛЬДЬ": [
-        { "discount": 1000, "price_to": 8000, "price_after": 17000 },
-        { "discount": 2000, "price_to": 17000, "price_after": 25000 },
-        { "discount": 3000, "price_to": 25000, "price_after": 30000 },
-        { "discount": 4000, "price_to": 30000, "price_after": 500000 }
+        { "discount": 750, "price_to": 9000, "price_after": 500000 }
     ],
     "ЛИЧНЫЙ SALE..": [
         { "discount": 1000, "price_to": 4000, "price_after": 25000 },
